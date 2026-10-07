@@ -1,0 +1,15 @@
+/* NexGene mobile styles — PLACEHOLDER
+   Replace this entire file with the full mobile/styles.css from the zip. */
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #06070b;
+  color: #e8e6e3;
+  margin: 0;
+  padding: 2rem;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+}
