@@ -1,9 +1,11 @@
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-MAIN = (ROOT / "backend" / "app" / "main.py").read_text()
-
-
-def test_intelligence_surfaces_exist():
-    assert "/api/v1/intelligence" in MAIN
-    assert "intelligence" in MAIN.lower()
+def test_intelligence_engine_contract():
+    root = Path(__file__).parents[2]
+    main = (root / "backend/app/main.py").read_text()
+    assert "def _pearson" in main
+    assert "exploratory_association" in main
+    assert "not_causal" in main
+    assert "clinical_escalation" in main
+    assert "/api/v1/intelligence/insights" in main
+    assert "/api/v1/intelligence/data-quality" in main
